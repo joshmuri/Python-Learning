@@ -94,3 +94,58 @@ print(thislist4[-4:-1])
 thislist = ["apple", "banana", "cherry"]
 if "apple" in thislist:
     print("Yes, 'apple' is in the fruits list")
+
+# Change Item Value
+# To change the value of a specific item, refer to the index number:
+# Change the third item
+
+thislist5 = ["apple", "banana", "cherry", "Mango", "Melon"]
+thislist5[3] = "Avocado"
+
+# change a range
+thislist5[1:2] = ["Kiwi", "Sugarcane"]
+print(thislist5)
+
+# Insert Items
+# TO insert a new list item, without replacing any of the existing values we can use the insert() method.
+
+thislist6 = ["apple", "banana", "cherry"]
+thislist6.insert(3, "Mango")
+print(thislist6)
+
+# Append Items
+# Adds items at the end of the lists
+
+thislist7 = ["apple", "banana", "cherry"]
+thislist7.append("Watermelon")
+print(thislist6)
+
+# Remove Specified item
+thislist8 = ["apple", "banana", "cherry"]
+thislist8.remove("banana")
+print(thislist8)
+
+# Remove specified index
+thislist9 = ["apple", "banana", "cherry"]
+thislist9.pop(1)
+print(thislist9)
+
+# Remove last item
+thislist10 = ["apple", "banana", "cherry"]
+thislist10.pop()
+print(thislist10)
+
+# delete list completely
+thislist11 = ["apple", "banana", "cherry"]
+del thislist11
+
+# Loop Lists
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+    print(x)
+
+# Loop through index numbers
+thislist = ["apple", "banana", "cherry"]
+for i in range(len(thislist)):
+    print(thislist[i])
+
